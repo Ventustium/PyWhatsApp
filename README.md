@@ -90,7 +90,9 @@ As of January 2021 this project is working as intended.
 
 ## Authors
 [Rahil Memon | LinkedIn](https://www.linkedin.com/in/rahil-memon/)
+
 [Palak Shah | LinkedIn](https://www.linkedin.com/in/palakshah99/)
+
 [Shweta Shekhar | LinkedIn](https://www.linkedin.com/in/shweta-shekhar-617962182/)
 
 
