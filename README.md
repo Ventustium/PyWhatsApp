@@ -6,11 +6,8 @@ Whatsapp Broadcast Automation using Python and Excel for broadcasting messages a
 
 - [Background](#Background)
 - [How to use](#How-to-use)
-- [Execution](#Execution)
-- [Scaffolding](#Scaffolding)
-- [Bugs](#Bugs)
-- [Authors](#Authors)
-
+- [Execution](#
+- [
 ## Background
 
 > Whatsapp has a built-in broadcast feature that lets you send messages to **256 contacts** but to reduce spam whatsapp requires that the person whom you are broadcasting should have your number saved. 
