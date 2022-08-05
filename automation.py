@@ -114,12 +114,12 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
         #if image is selected
         if (toSendImage==1):
             import autoit
-            clipButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div/div/span')
+            clipButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/div/span')
             clipButton.click()
             time.sleep(1)
 
             # To send Videos and Images.
-            mediaButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div/span/div/div/ul/li[1]/button/span')
+            mediaButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/span/div/div/ul/li[1]/button/span')
             
             mediaButton.click()
             time.sleep(3)
@@ -128,7 +128,7 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
             autoit.control_click("Open","Button1")
 
             time.sleep(7)
-            captionbox = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div/span/div/div[2]/div/div[3]/div[1]/div[2]')
+            captionbox = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[1]/div[3]/div/div/div[2]/div[1]/div[2]')
             for ch in caption:
                 if ch == "\n":
                     ActionChains(driver).key_down(Keys.SHIFT).key_down(Keys.ENTER).key_up(Keys.ENTER).key_up(Keys.SHIFT).key_up(Keys.BACKSPACE).perform()
@@ -137,17 +137,17 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
 
             time.sleep(1)
 
-            whatsapp_send_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div')
+            whatsapp_send_button = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div')
             whatsapp_send_button.click()
             #image sent
         #to send document
         if(toSendDocuement==1):
             import autoit
-            clipButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div/div/span')
+            clipButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/div/span')
             clipButton.click()
             time.sleep(1)
 
-            docButton = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[1]/div[2]/div/span/div/div/ul/li[3]/button/span')
+            docButton = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[1]/div[2]/div/span/div/div/ul/li[4]/button/span')
             docButton.click()
             time.sleep(1)
 
@@ -156,7 +156,7 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
             autoit.control_click("Open","Button1")
 
             time.sleep(3)
-            whatsapp_send_button = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div')
+            whatsapp_send_button = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/div/div[2]/div[2]/div/div/span')
             whatsapp_send_button.click()
 
         print("Message sent to : "+ target + '\n')
