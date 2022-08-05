@@ -25,9 +25,9 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
 
 
 
-    wait = WebDriverWait(driver, 20)
+    wait = WebDriverWait(driver, 40)
     wait5 = WebDriverWait(driver, 5)
-    wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div/div[4]/div/div")))
+    wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="side"]/div[1]/div/div/div[2]/div/div[2]')))
     #search for contacts
     for target in targets:
 
@@ -85,7 +85,7 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
             except:
                 # If the name of contact is not found then search for the contact
                 # click the search button
-                inputSearchBox = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input')
+                inputSearchBox = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[3]/div/div[1]/div/div/div[2]/div/div[2]')
                 time.sleep(1)
                 inputSearchBox.clear()
                 inputSearchBox.send_keys(target[1:len(target) - 1])
@@ -98,7 +98,7 @@ def SendMessage( message , targets , toSendImage , caption , toSendDocuement , i
 
         # Select the chat box 
         time.sleep(2)
-        inp_xpath = "/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div[2]/div/div[2]"
+        inp_xpath = "/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]"
         input_box = wait.until(EC.presence_of_element_located((By.XPATH, inp_xpath)))
         time.sleep(2)
 
