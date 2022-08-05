@@ -4,12 +4,18 @@ Whatsapp Broadcast Automation using Python and Excel for broadcasting messages a
 
 ## Table of Contents
 
-- [Background](#Background)
-- [How to use](#How-to-use)
-- [Execution](#Execution)
-- [Scaffolding](#Scaffolding)
-- [Bugs](#Bugs)
-- [Authors](#Authors)
+- [PyWhatsapp - Automating broadcasts.](#pywhatsapp---automating-broadcasts)
+  - [Table of Contents](#table-of-contents)
+  - [Background](#background)
+  - [How to use](#how-to-use)
+    - [Installation](#installation)
+    - [Chrome Webdriver](#chrome-webdriver)
+    - [Input format](#input-format)
+  - [Execution](#execution)
+  - [Scaffolding](#scaffolding)
+  - [Bugs](#bugs)
+  - [Authors](#authors)
+    - [Edited By](#edited-by)
 
 ## Background
 
@@ -22,8 +28,8 @@ Whatsapp Broadcast Automation using Python and Excel for broadcasting messages a
 
 * First clone the repository by typing this command in terminal 
 ```
-git clone https://github.com/Yilber/readme-boilerplate.git
-cd readme-boilerplate
+git clone https://github.com/Ventustium/PyWhatsApp.git
+cd PyWhatsApp
 ```
 
 * Installing dependencies 
@@ -73,12 +79,6 @@ PyWhatsApp
 ├── chromedriver.exe
 ├── contacts.xlsx
 ├── main.py
-├── examples
-│   └── abc.docx
-│   └── pikachu.jpg
-├── examples
-│   └── autoit-v3-setup.exe
-│   └── SciTE4AutoIt3.exe
 └── README.md
 ```
 
@@ -86,7 +86,7 @@ PyWhatsApp
 
 This is a selenium based project which relies heavily on the structure of web pages. 
 if web whatsapp makes any changes internally then it can break the working of this project. 
-As of January 2021 this project is working as intended. 
+As of August 2022 this project is working as intended. 
 
 ## Authors
 [Rahil Memon | LinkedIn](https://www.linkedin.com/in/rahil-memon/)
@@ -94,5 +94,8 @@ As of January 2021 this project is working as intended.
 [Palak Shah | LinkedIn](https://www.linkedin.com/in/palakshah99/)
 
 [Shweta Shekhar | LinkedIn](https://www.linkedin.com/in/shweta-shekhar-617962182/)
+
+### Edited By
+[Ventustium | Kevin Linuhung](https://www.ventustium.com)
 
 
